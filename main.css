@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.inputSection {
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+
+}
+
+.inputs {
+  width: inherit;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.addOption {
+  background-color: yellow;
+  border-radius: 8px;
+  margin-top: 10px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.addOption:hover {opacity: 1}
