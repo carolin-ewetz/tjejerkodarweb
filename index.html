@@ -7,7 +7,7 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Rubrik aka "help me choose between"</h1>
+    <h1 class="rubrik">Rubrik aka "help me choose between"</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Your name"></input><br>
@@ -15,10 +15,33 @@
         <br>
         <input type="checkbox" name="validate" value="yes" unchecked> Can't come :(
       </div>
+      <div class="resultSection"></div>
       <button class="addOption">Add</button>
     </div>
     <button>Go!</button>
     <br>
     <img src="palms.jpeg" alt="Palm trees" height="450" width="1000">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+
+        $('addOption').click(add_option)
+
+      /*  $('.rubrik').click(function() {
+          $('body').css('background-color', 'yellow')
+        }) version 1, byter färg vid klick*/
+
+        $('.rubrik').click(function() {
+          $('body').toggleClass('changeBackground')
+        });
+
+      }
+    )
+    </script>
   </body>
 </html>

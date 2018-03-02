@@ -41,3 +41,7 @@ input {
 }
 
 .addOption:hover {opacity: 1}
+
+.changeBackground{
+  background-color: #A5ECD7
+}
