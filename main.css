@@ -45,3 +45,11 @@ input {
 .changeBackground{
   background-color: #A5ECD7
 }
+
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
